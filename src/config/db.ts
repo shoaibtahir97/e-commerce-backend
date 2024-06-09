@@ -10,4 +10,5 @@ async function connectDB() {
     console.log(`Error: ${err.message}`);
   }
 }
+
 export default connectDB;
