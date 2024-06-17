@@ -10,6 +10,7 @@ const products: Product[] = [
     image: "https://zone-ui.vercel.app/assets/images/z_product/product_1.png",
     rating: { rate: 3.9, count: 120 },
     countInStock: 10,
+    reviews: null,
   },
   {
     title: "Mens Casual Premium Slim Fit T-Shirts ",

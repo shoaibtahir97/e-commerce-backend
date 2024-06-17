@@ -1,10 +1,5 @@
 import { Schema, model } from "mongoose";
 
-const ratingSchema = new Schema({
-  rate: { type: Number, required: true },
-  count: { type: Number, required: true },
-});
-
 const reviewSchema = new Schema(
   {
     user: {
@@ -35,12 +30,10 @@ const productSchema = new Schema(
     category: { type: String, required: true },
     image: { type: String, required: true },
     reviews: [reviewSchema],
-    rating: [
-      {
-        rate: { type: Number, required: true },
-        count: { type: Number, required: true },
-      },
-    ],
+    rating: {
+      rate: { type: Number, required: true },
+      count: { type: Number, required: true },
+    },
     countInStock: { type: Number, required: true, default: 0 },
   },
   { timestamps: true }
